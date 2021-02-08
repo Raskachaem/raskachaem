@@ -1,0 +1,206 @@
+.plans {
+  @media screen and (max-width: 767px) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 22px;
+    padding-bottom: 55px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    border-top: 2px solid $main-color;
+  }
+  &-container {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 767px) {
+      max-width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+    }
+  }
+  &-info__icon {
+    @media screen and (max-width: 767px) {
+      width: 64px;
+      height: 60px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 92px;
+      height: 85px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 187px;
+      height: 174px;
+    }
+  }
+  &-info {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &-title {
+    @extend %text-throw;
+    color: $text-color;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.37;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 5px;
+      font-size: 26px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 8px;
+      font-size: 37px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 48px;
+      font-size: 80px;
+    }
+  }
+  &-text {
+    @extend %text-throw;
+    color: $text-color;
+    text-align: center;
+    opacity: 0.6;
+    line-height: 1.4;
+    @media screen and (max-width: 767px) {
+      font-size: 10px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 20px;
+    }
+  }
+  &-item {
+    position: relative;
+    background: $plan-bg;
+    padding: 18px 33px;
+    border-radius: 50px;
+  }
+  &-title__info {
+    @extend %text-throw;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333333;
+    font-weight: 800;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 26px;
+      padding-bottom: 5px;
+      font-size: 18px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+      margin-bottom: 26px;
+      padding-bottom: 8px;
+    }
+  }
+  &-list {
+    @extend %list-throw;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 25px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 25px;
+    }
+  }
+  &-button {
+    @extend %button-style;
+    text-transform: uppercase;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.plans-list__item {
+  color: #333333;
+  z-index: 10;
+  line-height: 1.35;
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+.plans-container .splide__pagination {
+  display: none;
+}
+.plans-item__icon {
+  position: absolute;
+  @media screen and (max-width: 767px) {
+    bottom: 30%;
+    right: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    bottom: 25%;
+    right: 0;
+  }
+}
+.is-positioned {
+  top: 30px;
+  right: 0;
+}
+.plans-container .splide__arrow svg {
+  fill: #ffffff;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.plans-shop__icon {
+  position: absolute;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    width: 58px;
+    height: 71px;
+    bottom: 0;
+    left: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 108px;
+    height: 133px;
+    bottom: -100px;
+    left: 0;
+  }
+}
+.plans-percent__icon {
+  position: absolute;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    width: 115px;
+    height: 130px;
+    bottom: -60px;
+    right: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: -100px;
+  }
+}

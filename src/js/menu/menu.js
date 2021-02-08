@@ -8,8 +8,7 @@ const refs = {
 
 refs.header.addEventListener('click', evt => {
     const { menuButton, closeButton, header, nav } = refs;
-    evt.preventDefault();
-    console.log(evt.target);
+    evt.preventDefault();    
     if (evt.target === menuButton) {
         nav.classList.add('is-open')
     }

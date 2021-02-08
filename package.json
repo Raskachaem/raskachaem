@@ -31,6 +31,7 @@
     "sass": "^1.26.9"
   },
   "dependencies": {
+    "@splidejs/splide": "^2.4.21",
     "lodash.debounce": "^4.0.8"
   }
 }

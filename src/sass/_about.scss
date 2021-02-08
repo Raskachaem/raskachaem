@@ -1,13 +1,57 @@
 .about {
-  @media screen and (min-width: 377px) {
+  @media screen and (max-width: 1279px) {
     padding-top: 22px;
     padding-bottom: 22px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 110px;
     padding-bottom: 110px;
+    border-top: 2px solid $main-color;
+  }
+  &-heart__icon {
+    position: absolute;
+    @media screen and (max-width: 767px) {
+      width: 42px;
+      height: 40px;
+      top: 0;
+      right: 0;
+    }
+    @media screen and (min-width: 768px) {
+      width: 65px;
+      height: 65px;
+      top: 0;
+      right: 0;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 124px;
+      height: 125px;
+      top: -40px;
+      right: -20px;
+    }
+  }
+  &-like__icon {
+    position: absolute;
+    @media screen and (max-width: 767px) {
+      width: 35px;
+      height: 32px;
+      bottom: 30px;
+      right: 78px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 80px;
+      height: 72px;
+      bottom: 55px;
+      right: 0;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 173px;
+      height: 156px;
+      bottom: -100%;
+      right: -15%;
+    }
   }
   &-container {
+    position: relative;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -24,29 +68,96 @@
   }
   &-title {
     @extend %text-throw;
-    text-transform: uppercase;
     color: $text-color;
     text-align: center;
     @media screen and (max-width: 767px) {
       font-weight: 600;
       font-size: 16px;
       line-height: 1.37;
-    }
-    @media screen and (min-width: 377px) {
+      text-transform: uppercase;
       margin-bottom: 16px;
     }
+    @media screen and (min-width: 768px) {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.35;
+    }
+
     @media screen and (min-width: 1280px) {
       margin-bottom: 36px;
+      font-size: 35px;
     }
   }
   &-list {
     @extend %list-throw;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 65px;
+    }
     &__icon {
-      width: 100%;
       display: block;
       @media screen and (max-width: 767px) {
-        margin-bottom: 16px;
+        margin-bottom: 20px;
+        width: 100%;
       }
+      @media screen and (min-width: 768px) {
+        width: 90%;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 100%;
+      }
+    }
+  }
+  &-info {
+    @extend %text-throw;
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 1.35;
+      color: $text-color;
+      margin-bottom: 28px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      line-height: 1.35;
+      color: $text-color;
+      margin-bottom: 14px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+    }
+  }
+  &-adv {
+    @extend %text-throw;
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      line-height: 1.35;
+      color: $text-color;
+      opacity: 0.5;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+      line-height: 1.35;
+      color: $text-color;
+      opacity: 0.5;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    @media screen and (min-width: 1280px) {
+      font-weight: 300;
+      font-size: 28px;
     }
   }
 }
@@ -55,7 +166,7 @@
   list-style: none;
 
   @media screen and (max-width: 767px) {
-    padding-left: 80px;
+    padding-left: 60px;
   }
 }
 .about-inner__item {
@@ -68,4 +179,19 @@
       margin-bottom: 20px;
     }
   }
+  @media screen and (min-width: 768px) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.35;
+    color: $text-color;
+    &:not(:last-child) {
+      margin-bottom: 37px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
+}
+.item-relative {
+  position: relative;
 }

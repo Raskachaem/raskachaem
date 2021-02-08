@@ -1,0 +1,86 @@
+.team {
+  @media screen and (max-width: 1279px) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    border-top: 2px solid $main-color;
+  }
+  &-container {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 767px) {
+      max-width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+    }
+  }
+  &-list {
+    @extend %list-throw;
+    display: grid;
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: 1280px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &-title {
+    text-transform: uppercase;
+    color: $text-color;
+    text-align: center;
+    line-height: 1.37;
+    font-family: $roboto;
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      font-weight: 300;
+    }
+    @media screen and (min-width: 768px) {
+    }
+  }
+}
+.team-list__photo {
+  width: 100%;
+  display: block;
+}
+.alexey {
+  @media screen and (max-width: 767px) {
+    transform: translateX(40px);
+  }
+}
+.nata {
+  @media screen and (max-width: 767px) {
+    transform: translateX(-30px);
+  }
+}
+.nikita {
+  @media screen and (max-width: 767px) {
+    transform: translateX(40px);
+  }
+}
+.andrey {
+  @media screen and (max-width: 767px) {
+    transform: translateX(-25px);
+  }
+}
+.oleks {
+  @media screen and (max-width: 767px) {
+    transform: translateX(25px);
+  }
+}

@@ -20,6 +20,11 @@ $button-hover: linear-gradient(
   rgba(145, 164, 238, 1) 50%,
   rgba(198, 213, 251, 1) 100%
 );
+$plan-bg: linear-gradient(
+  180deg,
+  rgba(182, 172, 224, 1) 46%,
+  rgba(226, 220, 235, 1) 83%
+);
 //Анимация
 $animation-timing: 0.4s ease-in-out;
 // Шрифты

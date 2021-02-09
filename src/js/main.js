@@ -1,4 +1,5 @@
-import './menu/menu';
+import './anchors/header-logic';
+import './radio/radio';
 import Splide from '@splidejs/splide';
 const splideContainer = document.querySelector('.splide');
 const sliderContainer = document.getElementById('slider');

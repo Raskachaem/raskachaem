@@ -274,3 +274,52 @@ body {
   opacity: 0.5;
   text-transform: uppercase;
 }
+///////////////////////////////////////////RADIO
+.form_radio {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  flex-direction: column;
+  z-index: 6000;
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+.form_radio input[type='radio'] {
+  opacity: 0;
+  z-index: -1;
+}
+.form_radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+  margin-bottom: 20px;
+}
+.form_radio label:before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: url('../images/icons/dots.svg') 0 0 no-repeat;
+}
+
+/* Checked */
+.form_radio input[type='radio']:checked + label:before {
+  background: url('../images/icons/dotIcon.svg') 0 0 no-repeat;
+}
+
+/* Hover */
+.form_radio label:hover:before {
+  filter: brightness(120%);
+}

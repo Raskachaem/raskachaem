@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://VolodymyrBuzinov.github.io/myladyslim",
+  "homepage": "https://VolodymyrBuzinov.github.io/raskachaem",
   "scripts": {
     "dev": "parcel src/*.html",
     "prebuild": "babel src -d lib",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url=/myladyslim/",
+    "predeploy": "npm run build -- --public-url=/raskachaem/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {

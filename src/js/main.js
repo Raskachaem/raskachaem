@@ -1,7 +1,6 @@
 import './anchors/header-logic';
 import './radio/radio';
 import './popup/popup';
-import './php/send.php';
 import Splide from '@splidejs/splide';
 const splideContainer = document.querySelector('.splide');
 const sliderContainer = document.getElementById('slider');
@@ -13,3 +12,4 @@ if (window.matchMedia('(min-width: 768px)').matches) {
 if (window.matchMedia('(min-width: 1280px)').matches) {	
 	new Splide( sliderContainer, { autoplay: false, pauseOnHover: false, interval: 5000, gap: '37px', perPage: 3} ).mount();
 }
+

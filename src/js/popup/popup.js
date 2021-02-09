@@ -34,3 +34,4 @@ plansSct.addEventListener('click', evt => {
         backdrop.classList.remove('is-hided');
     }
 })
+

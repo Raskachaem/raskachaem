@@ -1,11 +1,15 @@
 .team {
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 767px) {
     padding-top: 22px;
     padding-bottom: 22px;
   }
+  @media screen and (min-width: 768px) {
+    padding-top: 22px;
+    padding-bottom: 60px;
+  }
   @media screen and (min-width: 1280px) {
     padding-top: 110px;
-    padding-bottom: 110px;
+    padding-bottom: 170px;
     border-top: 2px solid $main-color;
   }
   &-container {
@@ -42,16 +46,21 @@
     }
   }
   &-title {
+    @extend %text-throw;
     text-transform: uppercase;
     color: $text-color;
     text-align: center;
     line-height: 1.37;
     font-family: $roboto;
     @media screen and (max-width: 767px) {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 300;
     }
     @media screen and (min-width: 768px) {
+      font-size: 22px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 41px;
     }
   }
 }
@@ -61,7 +70,13 @@
 }
 .alexey {
   @media screen and (max-width: 767px) {
-    transform: translateX(40px);
+    transform: translateX(15px);
+  }
+  @media screen and (min-width: 768px) {
+    transform: translateY(100px);
+  }
+  @media screen and (min-width: 1280px) {
+    transform: translateY(150px);
   }
 }
 .nata {
@@ -71,16 +86,56 @@
 }
 .nikita {
   @media screen and (max-width: 767px) {
-    transform: translateX(40px);
+    transform: translateX(15px);
+  }
+  @media screen and (min-width: 768px) {
+    transform: translateY(100px);
   }
 }
 .andrey {
   @media screen and (max-width: 767px) {
     transform: translateX(-25px);
   }
+  @media screen and (min-width: 1280px) {
+    transform: translateY(160px);
+  }
 }
 .oleks {
   @media screen and (max-width: 767px) {
-    transform: translateX(25px);
+    transform: translateX(15px);
+  }
+  @media screen and (min-width: 768px) {
+    transform: translateY(60px);
+  }
+}
+.team-smile__icon {
+  position: absolute;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    top: 10%;
+    left: 45%;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 143px;
+    height: 140px;
+    top: 10%;
+    left: 55%;
+  }
+}
+.team-arrow__icon {
+  position: absolute;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    top: 65%;
+    left: 40%;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 85%;
+    top: 104%;
   }
 }

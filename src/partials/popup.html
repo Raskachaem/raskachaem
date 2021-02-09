@@ -2,11 +2,20 @@
     <div class="backdrop-inner">
         <img class="backdrop-icon__close" src="./images/icons/iconClose.svg" alt="Кнопка закрытия модалки">
         <h2 class="backdrop-title">Оставить заявку</h2>
-        <form class="backdrop-form" action="">
-        <input class="backdrop-input" placeholder="Введите адрес сайта" type="text">
-        <input class="backdrop-input" placeholder="Введите ваш e-mail" type="text">
-        <input class="backdrop-input" placeholder="Введите номер телефона" type="text">
-        </form>
-        <button class="backdrop-button">Заказать</button>
+        <form class="backdrop-form" action="send.php" method="post">            
+            <label class="backdrop-label">
+                <img class="backdrop-icon" src="./images/icons/adress.svg" alt="Иконка адресса">
+                <input class="backdrop-input" placeholder="Введите адрес сайта" name="adress" type="text" required>
+            </label>
+        <label class="backdrop-label">
+            <img class="backdrop-icon" src="./images/icons/mail.svg" alt="Иконка почты">
+            <input class="backdrop-input" placeholder="Введите ваш e-mail" name="email" type="text" required>
+        </label>
+        <label class="backdrop-label">
+            <img class="backdrop-icon" src="./images/icons/phone.svg" alt="Иконка телефона">
+            <input class="backdrop-input" placeholder="Введите номер телефона" name="phone" type="text" required>
+        </label>
+        <button type="submit" class="backdrop-button">Заказать</button>
+        </form>        
     </div>
 </section>

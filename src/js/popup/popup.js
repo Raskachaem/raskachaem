@@ -1,4 +1,4 @@
-const refs = {
+const refs = {    
     backdrop: document.querySelector('.backdrop'),
     closeBtn: document.querySelector('.backdrop-icon__close'),
     startBtn: document.querySelector('.header-info__button'),

@@ -40,7 +40,6 @@ body {
     @media screen and (min-width: 1280px) {
       display: flex;
       align-items: center;
-      justify-content: space-between;
       margin-bottom: 160px;
     }
   }
@@ -86,6 +85,7 @@ body {
   }
 }
 .header-nav {
+  position: relative;
   z-index: 500;
   @media screen and (max-width: 767px) {
     padding: 6px 11px;
@@ -322,4 +322,17 @@ body {
 /* Hover */
 .form_radio label:hover:before {
   filter: brightness(120%);
+}
+.header-nav__destop__burger {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 41px;
+    position: absolute;
+    right: -80px;
+    top: 0;
+    opacity: 0.5;
+  }
 }

@@ -14,6 +14,8 @@ const sections = {
     teamSec: document.getElementById('team'),   
     header: document.querySelector('.js-header'),
 }
+const { header, aboutSec, servicesSec, portfolioSec, plansSec, teamSec } = sections;
+    const {radio1, radio2, radio3, radio4, radio5, radio6 } = radio;
 const moveSections = function (section) {
      section.scrollIntoView({
 	behavior: 'smooth',
@@ -21,8 +23,7 @@ const moveSections = function (section) {
         });
 }
 document.querySelector('.js-form').addEventListener('click', evt => {    
-    const { header, aboutSec, servicesSec, portfolioSec, plansSec, teamSec } = sections;
-    const {radio1, radio2, radio3, radio4, radio5, radio6 } = radio;
+    
     if (evt.target === radio1) {
         moveSections(header);
     }
@@ -45,11 +46,7 @@ document.querySelector('.js-form').addEventListener('click', evt => {
 )
 
 
-const loadNextPage = function () { 		
-	console.log(window.scrollY);	
-
-    const { radio1, radio2, radio3, radio4, radio5, radio6 } = radio;
-    const { header, aboutSec, servicesSec, portfolioSec, plansSec} = sections;
+const loadNextPage = function () { 	    
     if (window.scrollY - header.scrollHeight < 0) {
 		radio1.checked = true;		
 	}

@@ -88,9 +88,9 @@ body {
   position: relative;
   z-index: 500;
   @media screen and (max-width: 767px) {
-    padding: 6px 11px;
-    background-color: #ffffff;
-    border-radius: 5px;
+    padding: 13px 22px;
+    background: $plan-bg;
+    border-radius: 15px;
     text-align: center;
     position: absolute;
     top: 90px;
@@ -123,6 +123,7 @@ body {
   &__link {
     @extend %link-style;
     text-transform: uppercase;
+    font-weight: 500;
     font-size: 24px;
     font-family: $roboto;
     @media screen and (min-width: 768px) {

@@ -26,6 +26,8 @@
   }
   &-work {
     width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
   &-mouse__icon {
     position: absolute;
@@ -118,4 +120,6 @@
 }
 .portfolio-work__container .splide__pagination {
   display: none;
+}
+.portfolio-work__container .splide__slide {
 }

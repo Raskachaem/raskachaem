@@ -3,15 +3,12 @@ import swal from 'sweetalert';
 const refs = {    
     backdrop: document.querySelector('.backdrop'),
     closeBtn: document.querySelector('.backdrop-icon__close'),
-    startBtn: document.querySelector('.header-info__button'),
-    orderBtn1: document.querySelector('.js-first'),
-    orderBtn2: document.querySelector('.js-second'),
-    orderBtn3: document.querySelector('.js-third'),
+    startBtn: document.querySelector('.header-info__button'),    
     plansSct: document.querySelector('.plans'),
     buttonContainer: document.querySelector('.button-container'),
     form: document.querySelector('.backdrop-form'),
 }
-const {backdrop, closeBtn, startBtn, orderBtn1, orderBtn2, orderBtn3, plansSct, buttonContainer } = refs;
+const {backdrop, closeBtn, startBtn, plansSct, buttonContainer } = refs;
 backdrop.addEventListener('click', evt => {    
     if (evt.target === closeBtn) {
         backdrop.classList.add('is-hided');
@@ -33,7 +30,7 @@ window.addEventListener('keydown', evt => {
     }    
 })
 plansSct.addEventListener('click', evt => {    
-    if (evt.target === orderBtn1 || evt.target === orderBtn2 || evt.target === orderBtn3) {
+    if (evt.target.tagName === 'BUTTON') {
         backdrop.classList.remove('is-hided');
     }
 })

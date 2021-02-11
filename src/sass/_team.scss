@@ -172,8 +172,10 @@
 }
 .team-list__link {
   transition: transform $animation-timing;
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
+  @media screen and (min-width: 768px) {
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
   }
 }

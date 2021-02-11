@@ -12,7 +12,7 @@ const sections = {
     portfolioSec: document.getElementById('portfolio'),
     plansSec: document.getElementById('plans'),
     teamSec: document.getElementById('team'),   
-    header: document.querySelector('.js-header'),
+    header: document.querySelector('.js-header'),    
 }
 const { header, aboutSec, servicesSec, portfolioSec, plansSec, teamSec } = sections;
     const {radio1, radio2, radio3, radio4, radio5, radio6 } = radio;
@@ -45,7 +45,7 @@ document.querySelector('.js-form').addEventListener('click', evt => {
 }
 )
 
-
+const arrowUp = document.querySelector('.arrow-top');
 const loadNextPage = function () { 	    
     if (window.scrollY - header.scrollHeight < 0) {
 		radio1.checked = true;		
@@ -64,8 +64,21 @@ const loadNextPage = function () {
     }
     if (window.scrollY - (header.scrollHeight + aboutSec.scrollHeight + servicesSec.scrollHeight + portfolioSec.scrollHeight + plansSec.scrollHeight) >= 0) {
 		radio6.checked = true;		
-	}
-	      
+    }
+    
+    if (window.scrollY > 800) {        
+        arrowUp.style.opacity = 1;
+        arrowUp.style.zIndex = 4000;
+    }   
+    if (window.scrollY < 800) {        
+        arrowUp.style.opacity = 0;
+        arrowUp.style.zIndex = -1;
+    }       
 }
 
 window.addEventListener('scroll', loadNextPage)
+window.addEventListener('click', evt => {
+    if (evt.target === arrowUp) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+})

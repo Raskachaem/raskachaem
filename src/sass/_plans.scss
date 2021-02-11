@@ -165,6 +165,12 @@
 .is-positioned {
   top: 30px;
   right: 0;
+
+  @media screen and (max-width: 767px) {
+    top: -10px;
+    right: 25px;
+    transform: rotate(15deg);
+  }
 }
 .plans-container .splide__arrow svg {
   fill: #ffffff;
@@ -203,5 +209,32 @@
   }
   @media screen and (min-width: 1280px) {
     bottom: -100px;
+  }
+}
+.plans-big__title {
+  @extend %text-throw;
+  line-height: 1.35;
+  font-weight: 700;
+  opacity: 0.1;
+  color: $text-color;
+  text-transform: uppercase;
+  position: absolute;
+  text-align: center;
+  top: -20px;
+  left: 55px;
+  right: 0;
+  bottom: 0;
+  height: 10%;
+
+  @media screen and (max-width: 767px) {
+    font-size: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 47px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 100px;
+    left: 135px;
+    height: 20%;
   }
 }

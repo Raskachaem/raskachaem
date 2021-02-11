@@ -7,6 +7,7 @@ const refs = {
     plansSct: document.querySelector('.plans'),
     buttonContainer: document.querySelector('.button-container'),
     form: document.querySelector('.backdrop-form'),
+    
 }
 const {backdrop, closeBtn, startBtn, plansSct, buttonContainer } = refs;
 backdrop.addEventListener('click', evt => {    

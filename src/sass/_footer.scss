@@ -33,12 +33,16 @@
   }
   &-list {
     @extend %list-throw;
-    display: grid;
+
     @media screen and (max-width: 767px) {
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      // grid-template-columns: repeat(3, 1fr);
+      // grid-gap: 10px;
     }
     @media screen and (min-width: 768px) {
+      display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px;
     }

@@ -1,6 +1,7 @@
 import './anchors/header-logic';
 import './radio/radio';
 import './popup/popup';
+import './phonePopup/phonePopups';
 import Splide from '@splidejs/splide';
 const splideContainer = document.querySelector('.splide');
 const sliderContainer = document.getElementById('slider');

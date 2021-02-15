@@ -126,20 +126,20 @@
     left: 55%;
   }
 }
-.team-arrow__icon {
-  position: absolute;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    top: 65%;
-    left: 40%;
-  }
-  @media screen and (min-width: 1280px) {
-    left: 85%;
-    top: 104%;
-  }
-}
+// .team-arrow__icon {
+//   position: absolute;
+//   @media screen and (max-width: 767px) {
+//     display: none;
+//   }
+//   @media screen and (min-width: 768px) {
+//     top: 65%;
+//     left: 40%;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     left: 85%;
+//     top: 104%;
+//   }
+// }
 .team-big__title {
   @extend %text-throw;
   pointer-events: none;

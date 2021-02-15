@@ -1,3 +1,5 @@
+import links from '../phonePopup/phonePopups'
+
 const radio = {
     radio1: document.getElementById('radio-1'),
     radio2: document.getElementById('radio-2'),
@@ -79,6 +81,11 @@ const loadNextPage = function () {
 window.addEventListener('scroll', loadNextPage)
 window.addEventListener('click', evt => {
     if (evt.target === arrowUp) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: 'smooth' });    }
+   
+    
+    if (evt.target === links.iconClose) {
+        links.popup.classList.remove('is-active');
     }
+    
 })

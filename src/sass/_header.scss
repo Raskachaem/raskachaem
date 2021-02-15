@@ -366,38 +366,46 @@ body {
 .phone-popup {
   position: fixed;
 
-  padding: 10px;
-  background-color: $main-color;
+  padding: 10px 20px;
+  background: $plan-bg;
+  border-radius: 25px;
   z-index: 2000;
   text-align: center;
-  transform: translateY(-200px);
+  transform: translateY(-300px);
   transition: $animation-timing;
   @media screen and (max-width: 767px) {
-    top: 80px;
-    left: 15px;
+    top: 100px;
+    right: 15px;
   }
   @media screen and (min-width: 768px) {
-    top: 10px;
-    right: 10px;
+    top: 100px;
+    right: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 200px;
+    right: 15px;
   }
   & p {
     margin: 0;
     color: $text-color;
     font-weight: bold;
     font-size: 14px;
+    color: $hover-color;
+  }
+  & p span {
+    color: $main-color;
   }
 }
 .popup-close {
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  top: -5px;
-  right: -5px;
-  fill: $text-color;
+  top: -12px;
+  right: -12px;
   transition: $animation-timing;
   &:hover,
   &:focus {
-    fill: rgb(253, 1, 1);
+    transform: scale(1.2);
   }
   & use {
     pointer-events: none;
@@ -405,4 +413,26 @@ body {
 }
 .is-active {
   transform: translateY(0);
+}
+.popup-call {
+  position: absolute;
+  top: -10px;
+  left: -35px;
+  width: 60px;
+  height: 60px;
+  display: block;
+  animation: phone 1500ms infinite;
+  transition: $animation-timing;
+}
+
+@keyframes phone {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
 }

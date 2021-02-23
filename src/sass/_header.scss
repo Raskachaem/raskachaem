@@ -385,15 +385,16 @@ body {
     top: 200px;
     right: 15px;
   }
+  & a {
+    text-decoration: none;
+    color: $main-color;
+  }
   & p {
     margin: 0;
     color: $text-color;
     font-weight: bold;
     font-size: 14px;
     color: $hover-color;
-  }
-  & p span {
-    color: $main-color;
   }
 }
 .popup-close {

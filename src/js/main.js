@@ -3,6 +3,7 @@ import './radio/radio';
 import './popup/popup';
 import './phonePopup/phonePopups';
 import Splide from '@splidejs/splide';
+import intersectionObserver from 'intersection-observer'
 const splideContainer = document.querySelector('.splide');
 const sliderContainer = document.getElementById('slider');
 new Splide(splideContainer, { rewind: true, autoplay: true, pauseOnHover: true, interval: 5000 }).mount();
